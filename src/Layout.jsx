@@ -1,4 +1,4 @@
-import { Text, Button, Box, HStack, VStack, Grid, GridItem } from "@chakra-ui/react";
+import { Text, Box, HStack, VStack } from "@chakra-ui/react";
 import { AiFillApple, AiFillHome, AiFillProfile, AiFillContacts } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
