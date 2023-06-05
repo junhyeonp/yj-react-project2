@@ -1,5 +1,6 @@
 import { Box, Grid, GridItem, Text, VStack } from "@chakra-ui/react";
 import Layout from "./Layout";
+import { Link } from "react-router-dom";
 
 const dataTour = [
   {
@@ -65,11 +66,13 @@ export default function Home() {
                   position="relative"
                   overflow={"hidden"}
                 >
-                  <Box position="abolute" top={0} left={0} w="full" h="full" bgGradient="linear(to-r, rgba(0,0,0,0.4), rgba(0,0,0,0.7))">
-                    <Text color={"white"} position={"absolute"} w="full" bottom="0" align="center" fontWeight={600} py={4}>
-                      {item.text}
-                    </Text>
-                  </Box>
+                  <Link to={"/detail"}>
+                    <Box position="abolute" top={0} left={0} w="full" h="full" bgGradient="linear(to-r, rgba(0,0,0,0.4), rgba(0,0,0,0.7))">
+                      <Text color={"white"} position={"absolute"} w="full" bottom="0" align="center" fontWeight={600} py={4}>
+                        {item.text}
+                      </Text>
+                    </Box>
+                  </Link>
                 </GridItem>
               ))}
             </Grid>
@@ -94,21 +97,23 @@ export default function Home() {
                   position={"relative"}
                   overflow={"hidden"}
                 >
-                  <Box position={"absolute"} top={0} left={0} w="full" h="full" bgGradient={"linear(to-r, rgba(0,0,0,0.4), rgba(0,0,0,0.7))"}>
-                    <Text
-                      w="full"
-                      align="center"
-                      position={"absolute"}
-                      top="50%"
-                      left="50%"
-                      transform={"translate(-50%, -50%)"}
-                      fontWeight={600}
-                      color="yellow.600"
-                      fontSize={28}
-                    >
-                      {item.text} 10% 할인
-                    </Text>
-                  </Box>
+                  <Link to="/detail">
+                    <Box position={"absolute"} top={0} left={0} w="full" h="full" bgGradient={"linear(to-r, rgba(0,0,0,0.4), rgba(0,0,0,0.7))"}>
+                      <Text
+                        w="full"
+                        align="center"
+                        position={"absolute"}
+                        top="50%"
+                        left="50%"
+                        transform={"translate(-50%, -50%)"}
+                        fontWeight={600}
+                        color="yellow.600"
+                        fontSize={28}
+                      >
+                        {item.text} 10% 할인
+                      </Text>
+                    </Box>
+                  </Link>
                 </GridItem>
               ))}
             </Grid>

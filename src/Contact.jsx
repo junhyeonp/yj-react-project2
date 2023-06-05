@@ -4,7 +4,7 @@ import Layout from "./Layout";
 export default function Contact() {
   return (
     <Layout>
-      <Box py="140px">
+      <Box w="inherit">
         <Text>연락처</Text>
       </Box>
     </Layout>
