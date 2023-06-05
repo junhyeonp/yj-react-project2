@@ -1,4 +1,4 @@
-import { Box, Button, Input, Radio, RadioGroup, Stack, Text, VStack } from "@chakra-ui/react";
+import { Button, Input, Radio, RadioGroup, Stack, Text, VStack } from "@chakra-ui/react";
 import Layout from "./Layout";
 import { useState } from "react";
 
