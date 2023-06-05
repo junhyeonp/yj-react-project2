@@ -56,6 +56,7 @@ export default function Home() {
             <Grid gridTemplateColumns={"repeat(2, 1fr)"} gap={2} w="full">
               {tourList.map((item, i) => (
                 <GridItem
+                  key={i}
                   h="200px"
                   border="1px"
                   rounded="md"
