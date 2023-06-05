@@ -1,12 +1,7 @@
 import { Button, Input, Radio, RadioGroup, Stack, Text, VStack } from "@chakra-ui/react";
 import Layout from "./Layout";
-import { useState } from "react";
 
 export default function Contact() {
-  const [name, setName] = useState("");
-  const handleChange = (e) => {
-    setName(e.target.value);
-  };
   return (
     <Layout>
       <VStack as={"form"} w="full" bg="gray.400" minH="100vh" py="140px" alignItems={"flex-start"} px={4} spacing={6}>
@@ -15,7 +10,7 @@ export default function Contact() {
         </Text>
         <VStack w="full" alignItems={"flex-start"}>
           <Text fontWeight="600">Name</Text>
-          <Input onChange={handleChange} value={name} bg="gray.100" placeholder="이름을 입력해 주세요"></Input>
+          <Input bg="gray.100" placeholder="이름을 입력해 주세요"></Input>
         </VStack>
         <VStack w="full" alignItems={"flex-start"}>
           <Text fontWeight="600">연락처</Text>
